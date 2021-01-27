@@ -25,6 +25,9 @@ android {
     }
     // TODO: A1. enable DataBinding in build.gradle
 
+    buildFeatures {
+        dataBinding true;
+    }
     // TODO: B1. enable ViewBinding in build.gradle
 }
 
