@@ -8,4 +8,5 @@
     <string name="last_name_hint">Doe</string>
     <string name="score_minus">-1</string>
     <string name="score_plus">+1</string>
+    <string name="score_board">Show Score Board</string>
 </resources>

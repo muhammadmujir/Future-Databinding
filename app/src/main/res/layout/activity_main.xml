@@ -141,5 +141,25 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:onClick="@{() -> viewModel.updateScore(1)}" />
 
+        <Button
+            android:id="@+id/bt_show_score_list"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_board"
+            android:textSize="@dimen/score_size"
+            android:backgroundTint="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_score"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:onClick="@{() -> activity.generateScoreList(viewModel.score)}" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView_score_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_show_score_list"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
